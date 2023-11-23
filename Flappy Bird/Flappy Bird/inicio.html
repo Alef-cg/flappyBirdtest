@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+   
+    <title>Flappybird</title>
+</head>
+<body>
+    <img class="back" src="./Blue_and_Yellow_Neon_Retro_Pixel_Art_Game_Night_Game_Presentation-removebg.png" alt="" >
+    <img src="./Bird.png" alt="" width="130px" class="burd">
+    <div class="gradiente"></div>
+
+    <div class="align">
+        <h1 id="title">Flappy Bird</h1>
+    </div>
+
+    <a href="index.html" class="computador"><img class="computador-1" src="./6-removebg.png" alt=""></a>
+    <a href="/flappybird mobile/indexmob.html" class="celular"><img class="computador-1" src="./7-removebg.png" alt=""></a>
+    
+
+   
+     
+    </div>
+
+    <style>
+        html{
+            background: linear-gradient(#00a2ff, #6beffe) ;
+            background-repeat: no-repeat;
+            background-size: 200%;
+            height: 100vh;
+        }
+    </style>
+
+<script>
+    // Desabilita a rolagem no carregamento da página
+    document.addEventListener('DOMContentLoaded', function() {
+        disableScroll();
+    });
+
+    function disableScroll() {
+        // Adiciona um event listener para o evento touchmove
+        document.addEventListener('touchmove', function(event) {
+            // Previne o comportamento padrão para evitar a rolagem
+            event.preventDefault();
+        }, { passive: false });
+    }
+
+    function enableScroll() {
+        // Remove o event listener para habilitar a rolagem
+        document.removeEventListener('touchmove', function(event) {
+            event.preventDefault();
+        });
+    }
+</script>
+
+
+
+</body>
+</html>
